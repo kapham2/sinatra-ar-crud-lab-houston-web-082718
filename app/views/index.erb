@@ -1,0 +1,5 @@
+<%# view index.erb, which shows a list of all of the posts %>
+<% @posts.each do |post| %>
+    <p>Name: <%=post.name %></p>
+    <p>Content: <%=post.content %></p>
+<%end %>

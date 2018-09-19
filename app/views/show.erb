@@ -1,0 +1,8 @@
+<%# view show.erb, which shows an individual post %>
+<p>Name: <%= @post.name %></p>
+<p>Content: <%= @post.content %></p>
+
+<form method="POST" action="/posts/<%=@post.id %>">
+    <input type="hidden" id="hidden" name="_method" value="delete">
+    <input type="submit" id="delete" value="delete">
+</form>
